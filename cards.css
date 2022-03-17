@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
+.cards-container {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+    border-top: solid 1px black;
+}
+
+.card {
+    border-radius: 10px;
+    width: 200px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img {
+    border-radius: 10px 10px 0px 0px;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/Filet-raw.jpg");
+    height: 200px;
+    width: 100%;  
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body h2 {
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+/*.list {}*/
+    
