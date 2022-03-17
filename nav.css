@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding-right: 3rem;
+  border-bottom: solid 1px rgb(141, 140, 140);
+}
+
+img {
+  width: 97px;
+  height: 75px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 10;
+}
+
+.nav-item {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+button {
+  align-self: center;
+  font-size: 1.2rem;
+  color: #204715;
+  border-radius: 10px;
+  background-color: #73c95a;
+  border: 1px solid #79b268;
+  width: 8rem;
+  height: 3rem;
+}
+
+.nav-meat:hover {
+  color: #c552b9;
+  border: 1px solid #c552b9;
+  border-radius: 10px;
+  background-color: #fef0f0;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.nav-fish:hover {
+  color: #4089cd;
+  border: 1px solid #4089cd;
+  border-radius: 10px;
+  background-color: #e9f6fa;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.nav-veggie:hover {
+  color: #f0a029;
+  border: 1px solid #f0a029;
+  border-radius: 10px;
+  background-color: #fcfee6;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/* Burger menu style */
+.burger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #204715;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav_mobile {
+    display: flex;
+  }
+
+  img {
+    width: 50px;
+    height: 30px;
+    order: 2;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  button {
+    order: 3;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    width: 3.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-meat:hover {
+    color: #c552b9;
+  }
+  .nav-fish:hover {
+    color: #4089cd;
+  }
+  .nav-veggie:hover {
+    color: #f0a029;
+  }
+}
