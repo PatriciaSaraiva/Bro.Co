@@ -1,0 +1,48 @@
+* {box-sizing:border-box}
+
+body {
+    margin : auto;
+
+}
+
+.slideshow-container {
+  max-width:100%;
+  padding-top: 5rem;
+  position:fixed;
+  margin: auto;
+  /* overflow-x: scroll; */
+  object-fit: cover;
+  
+}
+
+.mySlides {
+  display:none;
+
+}
+
+.text {
+    color: #202020;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+.textsecond {
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 40px;
+  }
+
+.textthird {
+    bottom: 320px;
+}
+
+@media only screen and (max-width: 600px){}
+    
+
+
