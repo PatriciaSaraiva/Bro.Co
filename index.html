@@ -9,14 +9,38 @@
     <title>Bro.Co</title>
   </head>
   <body>
-    <nav>
-      <img src="images/logo_Bro.Co.jpg" alt="Bro.Co_logo" />
-      <div class="nav_links">
-        <a href="#meat">Meat</a>
-        <a href="#fish">Fish</a>
-        <a href="#veggie">Veggie</a>
-      </div>
-      <button class="btn_newsletter">Newsletter</button>
-    </nav>
+    <header class="header">
+      <nav class="navbar">
+        <img class="logo" src="images/logo_Bro.Co.jpg" alt="Bro.Co_logo" />
+
+        <ul class="nav-menu">
+          <li class="nav-item nav-item_meat">
+            <a href="#" class="nav-link">Meat</a>
+          </li>
+          <li class="nav-item nav-item_fish">
+            <a href="#" class="nav-link">Fish</a>
+          </li>
+          <li class="nav-item nav-item_veggie">
+            <a href="#" class="nav-link">Veggie</a>
+          </li>
+        </ul>
+        <div class="btn-newsletter_container">
+          <button class="btn-container">
+            <a href="#" class="btn_newsletter">Newsletter</a>
+          </button>
+        </div>
+
+        <div class="burger-menu_container">
+          <div class="burger_menu">
+            <div class="burger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
+  <script src="components/burgerMenu.js"></script>
 </html>
