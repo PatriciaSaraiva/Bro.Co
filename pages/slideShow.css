@@ -16,8 +16,10 @@
   display: none;
 }
 
+
 .slideshow-container img {
   max-width: 100%;
+
   height: 500px;
   object-fit: cover;
 }
@@ -34,14 +36,40 @@
 }
 
 .textsecond {
-  color: #f2f2f2;
-  position: absolute;
-  bottom: 40px;
-}
+
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 30px;
+  }
+
 
 .textthird {
   bottom: 400px;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 600px){
+  .slideshow-container , .text {
+    max-width: 100%;
+    bottom: 99px;
+    font-size: 4vw;
+    height: auto;
+  
+    
+  }
+  .slideshow-container img {
+    object-fit: scale-down;
+    height: auto;
+    
+  }
+  .text {
+    bottom: 320px;
+
+  }
+  .textsecond {
+    bottom: 150px;
+  
+  } 
+
+
 }
