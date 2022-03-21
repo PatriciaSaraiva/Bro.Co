@@ -33,7 +33,6 @@ a {
   width: 97px;
   height: 75px;
 }
-/* TODO: add classe to button & img */
 
 .nav-menu {
   display: flex;
@@ -149,6 +148,7 @@ a {
 
   .nav-menu.active {
     left: 0;
+    z-index: 1000;
   }
 
   .nav-item {
