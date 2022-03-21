@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.form-title {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #204715;
+  margin-bottom: 3rem;
+  padding-top: 3.5rem;
+}
+
+.form-newsletter {
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.form-newsletter input {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 12px;
+  height: 25px;
+  padding-left: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+input[type="email"]::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+textarea::placeholder {
+  color: rgb(199, 199, 199);
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 0 1rem 0;
+}
+
+textarea {
+  height: 90px;
+  width: 100%;
+  padding-left: 1rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.btn-subscription {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #204715;
+  border-radius: 10px;
+  background-color: #73c95a;
+  border: 1px solid #79b268;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.form-img {
+  display: none;
+}
+
+/* The actual popup (appears on top) */
+.popup {
+  visibility: hidden;
+  width: 200px;
+  color: #204715;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 35%;
+  left: 45%;
+  margin-left: -80px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Do a set timeout to desapeare the Congrats*/
