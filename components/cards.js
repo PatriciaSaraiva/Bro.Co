@@ -4,19 +4,19 @@ const utensilsCards = [
   {
     name: "Salmon & Pesto-dressed veg",
     picture: "../images/salmon.jpg",
-    utensils: "Utensils: large pan, frying pan, food processor.",
+    utensils: ["large pan", "frying pan", "food processor"],
     time: "&#x1F551 30min"
   },
 
   {
     name: "Classic ratatouille",
     picture: "../images/courgette.jpg",
-    utensils: "Utensils: large casserole pan or saucepan.",
+    utensils: ["large casserole pan", "or saucepan"],
     time: "&#x1F551 1h.15min."
   }
 ];
 
-function createCard(title, imageUrl, list, time) {
+function createCard(title, imageUrl, utensils, time) {
   const card = document.createElement("div");
   card.classList.add("card");
   cards.appendChild(card);
@@ -39,10 +39,16 @@ function createCard(title, imageUrl, list, time) {
   cardTitle.innerHTML = title;
   cardBody.appendChild(cardTitle);
 
-  const cardList = document.createElement("h3");
-  cardList.classList.add("card-h3");
-  cardList.innerHTML = list;
-  cardTitle.appendChild(cardList);
+  const cardList = document.createElement("ul");
+  cardList.classList.add("card-list");
+
+  for (let i = 0; i < utensils.length; i++) {
+    const list = document.createElement("li");
+    list.innerHTML = utensils[i];
+    cardList.appendChild(list);
+  }
+  
+  cardBody.appendChild(cardList);
 
   const cardTime = document.createElement("p");
   cardTime.classList.add("cardTime");
