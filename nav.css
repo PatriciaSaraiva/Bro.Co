@@ -8,7 +8,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-li {
+.nav-menu li {
   list-style: none;
 }
 
@@ -18,14 +18,16 @@ a {
 }
 
 .header {
+  margin: auto 0 54px 0;
+  /* height: 50px; */
   padding: 12px 0;
-  border-bottom: solid 1px rgb(141, 140, 140);
+  width: 100%;
 }
 
 .navbar {
   display: flex;
   /* position: fixed; */
-  width: 100%;
+  border-bottom: solid 1px rgb(141, 140, 140);
   padding-right: 3rem;
 }
 
@@ -125,6 +127,7 @@ a {
   .burger {
     display: block;
     cursor: pointer;
+    
   }
 
   .btn-container {

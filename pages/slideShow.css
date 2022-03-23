@@ -1,75 +1,85 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+html, body {
+  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y:auto;
 }
 
 .slideshow-container {
-  max-width: 100%;
-  height: 500px;
+  margin: auto 0 20px 0;
+  width: 100%;
+  height: 95vh; 
   position: relative;
-  bottom: 54px;
-  overflow-x: scroll;
-  /* object-fit: cover; */
+  bottom: 66px;
+  
 }
 
 .mySlides {
   display: none;
 }
 
-
 .slideshow-container img {
-  max-width: 100%;
-
-  height: 500px;
+  width: 100%;
+  height: 95vh; 
   object-fit: cover;
+  font-size: 35px;
 }
 
 .text {
   color: #202020;
-  font-size: 35px;
   font-family: "Roboto", sans-serif;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 350px;
+  position: relative;
+  bottom: 500px;
   width: 100%;
   text-align: center;
 }
 
 .textsecond {
 
-      color: #f2f2f2;
-      position: absolute;
-      bottom: 30px;
+  color: #f2f2f2;
+  position: relative;
+  bottom : 130px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
   }
 
 
 .textthird {
-  bottom: 400px;
+  bottom: 500px;
 }
 
 
 @media only screen and (max-width: 600px){
-  .slideshow-container , .text {
-    max-width: 100%;
-    bottom: 99px;
-    font-size: 4vw;
-    height: auto;
-  
-    
-  }
-  .slideshow-container img {
-    object-fit: scale-down;
-    height: auto;
-    
-  }
-  .text {
-    bottom: 320px;
-
-  }
-  .textsecond {
-    bottom: 150px;
-  
-  } 
-
-
+    .slideshow-container {
+      font-size: 10px;
+      height: 180px;
 }
+    .slideshow-container img {
+      object-fit: scale-down;
+      height: auto;
+
+      
+    }
+
+    .text {
+      bottom: 200px;
+    }
+   
+    .textsecond {
+      bottom: 60px;
+    }
+
+    .textthird {
+      bottom: 220px;
+    }
+  }  
+
+
+
