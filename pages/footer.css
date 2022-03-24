@@ -1,8 +1,32 @@
 * {
-    list-style: none;
     margin:0;
     font-family: "Roboto", sans-serif;;
-    
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts_container {
+  margin-left: 5rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.contacts-description li {
+  padding: 10px 0;
+  list-style: none;
 }
 
 .footer_container {
@@ -47,6 +71,10 @@
 
 .fa-instagram {
     margin-left: 11px;
+}
+
+.fa-github {
+  margin-left: 10px;
 }
   
 .wrapper .tooltip {
@@ -103,8 +131,66 @@
     background-color: #e1306c;
     color: #ffffff;
   }
-  
 
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+  
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    height: 300px;
+}
+ .contacts-container {
+   margin:0;
+}
+.contacts-description {
+  width: 300px;
+  font-size: 18px;
+  
+}
+.wrapper .icon {
+  width: 60px;
+  height: 60px;
+  font-size: 39px;
+  line-height: 65px;
+  background-color: #333333;
+  color: #ffffff;
+ 
+}
+.fa-facebook-f {
+  margin-left: 18px;
+}
+
+.fa-twitter {
+  margin-left: 10px;
+}
+
+.fa-instagram {
+  margin-left: 13px;
+}
+
+.fa-github {
+margin-left: 13px;
+
+}
+.wrapper .tooltip {
+  display: none;
+}
+}
+@media only screen and (min-width: 768px) {
+
+
+
+
+
+
+
+
+}
+  
 
 
 
