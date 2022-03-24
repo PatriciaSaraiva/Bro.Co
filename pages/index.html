@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../nav.css"/>
     <link rel="stylesheet" href="./slideShow.css" />
     <link rel="stylesheet" href="../cards.css" />
+    <link rel="stylesheet" href="../newsletterForm.css" />
     <!-- <link rel="stylesheet" href="../index.css" /> -->
     <title>Slide test</title>
 </head>
@@ -15,8 +16,11 @@
     <!-- <object type="text/html" data="../nav.html" style="width: 100%;"></object> -->
     <header class="header">
       <nav class="navbar">
-        <img class="logo" src="../images/logo_Bro.Co.jpg" alt="Bro.Co_logo" />
-
+        <div class="logo">
+          <a href="#home" class="scroll-home"><img class="logo" src="../images/logo_Bro.Co.jpg" alt="Bro.Co_logo" /></a>
+          
+        </div>
+        
         <ul class="nav-menu">
           <li class="nav-item nav-item_meat">
             <a href="#" class="nav-link">Meat</a>
@@ -30,8 +34,8 @@
         </ul>
 
         <div class="btn-newsletter_container">
-          <button class="btn-container">
-            <a href="#" class="btn_newsletter">Newsletter</a>
+          <button class="btn-newsletter">
+            <a href="#form">Newsletter</a>
           </button>
         </div>
 
@@ -48,7 +52,7 @@
     </header>
   
   
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="home">
       <div class="mySlides">
         <img src="../images/spoons.jpg" style="width:100%">
        
@@ -77,10 +81,69 @@
             <li>processor</li>
             <li>oven</li>
           </ul>
-          <p class="cardTime">&#x1F551 1h.30min</p>
+          <p class="card-time">&#x1F551 1h.30min</p>
         </div>
       </div>
     </div>
+    
+    <div class="newsletter-container" id="form">
+      <div class="form-container">
+        <h1 class="form-title">Subscribe to our Newsletter</h1>
+        <form class="form-newsletter">
+          <label for="fullname">Full Name:</label><br />
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Full Name"
+          /><br />
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+          <br />
+          <label for="contact">Contact (Optional):</label><br />
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="Contact"
+          />
+          <br />
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="10"
+            cols="1"
+            placeholder="Message"
+          ></textarea>
+          <br />
+        </form>
+        <div class="btn-subscription_container">
+          <button class="btn-subscription" onclick="onSubscribe()">
+            Subscribe Now
+          </button>
+        </div>
+        <div class="popup" id="popup">
+          <p class="popuptext" id="myPopup">
+            Congratulations! You have subscribe our Newsletter.
+          </p>
+          <button class="btn-subscription_ok" id="ok" onclick="onCancelSubscribe()">OK!</button>
+        </div>
+      </div>
+      <div class="form-img_container">
+        <img class="form-img" />
+      </div>
+    </div>
+    <script>
+      function onSubscribe() {
+        const popup = document.getElementById("popup");
+        popup.classList.add("show");
+      }
+      function onCancelSubscribe() {
+        const popup = document.getElementById("popup");
+        popup.classList.remove("show");
+      }
+    </script>
       <script src="../components/burgerMenu.js"></script>
     <script src="../components/cards.js"></script>
     <script src="slide.js"></script>
