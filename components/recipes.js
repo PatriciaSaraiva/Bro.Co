@@ -19,8 +19,8 @@ const recipesBoxes = [
                    "Trim to 2cm, pinch the edges to seal, eggwash, and decorate with the trimmings, if you like. ", 
                "Cook on the bottom of the oven for 25 minutes, or until the pastry is golden on top and crispy underneath, for blushing, juicy beef. Rest for 2 minutes, then serve."
               ],
-              color: "bg-color1"       
-              
+              color: "bg-color1" ,      
+              id: "meat-section"
             },
             {
     ingredientsTitle: "Ingredients:",
@@ -31,7 +31,6 @@ const recipesBoxes = [
       "2 lemons"
     ],
     processTitle: "Salmon & pesto-dressed veg",
-
     process: [
               "For the pesto, peel the garlic and add half to a jug with the pine nuts. Pick in the basil leaves and blitz until finely chopped.",
               "Add 2 to 3 tablespoons of extra virgin olive oil, then finely grate and stir through the Parmesan",
@@ -43,7 +42,7 @@ const recipesBoxes = [
               "Divide the salmon and vegetables between plates, drizzle over the pan juices, then cut the remaining lemon into wedges for squeezing over."
             ],
             color: "bg-color2",         
-            
+            id: "fish-section"
           },
           {
             ingredientsTitle: "Ingredients:",
@@ -62,7 +61,8 @@ const recipesBoxes = [
       "Mix well, breaking up the tomatoes with the back of a spoon. Cover the pan and simmer over a low heat for 30 to 35 minutes, or until reduced, sticky and sweet.",
       "Tear in the basil leaves, finely grate in the lemon zest and adjust the seasoning, if needed. Serve with a hunk of bread or steamed rice."
     ],              
-    color: "bg-color3"             
+    color: "bg-color3",
+    id: "veggie-section"             
   }
 ];
 
@@ -70,10 +70,11 @@ const recipesBoxes = [
 
 const boxes = document.querySelector(".boxes");
 
-function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, process, bgColor) {
+function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, process, bgColor, id) {
   const boxContainer = document.createElement("div");
   boxContainer.classList.add("boxContainer");
   boxContainer.classList.add(bgColor);
+  boxContainer.setAttribute("id", id);
   boxes.appendChild(boxContainer);
   
   const box = document.createElement("div");
@@ -139,6 +140,7 @@ for (let i = 0; i < recipesBoxes.length; i++) {
     recipesBoxes[i].ingredients,
     recipesBoxes[i].processTitle,
     recipesBoxes[i].process,
-    recipesBoxes[i].color
+    recipesBoxes[i].color,
+    recipesBoxes[i].id
   );
 }

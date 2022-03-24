@@ -5,6 +5,9 @@
   font-family: "Roboto", sans-serif;
 }
 
+.form-container {
+  margin-bottom: 3rem;
+}
 .form-title {
   font-size: 1.3rem;
   text-align: center;

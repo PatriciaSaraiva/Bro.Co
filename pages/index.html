@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../nav.css" />
-    <link rel="stylesheet" href="./slideShow.css" />
     <link rel="stylesheet" href="../cards.css" />
     <link rel="stylesheet" href="../recipes.css" />
     <link rel="stylesheet" href="../newsletterForm.css" />
+    <link rel="stylesheet" href="./slideShow.css" />
     <link rel="stylesheet" href="./footer.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/search?q=tel&s=solid%2Cbrands"
+    />
+    <script
+      src="https://kit.fontawesome.com/7b20c61884.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Slide test</title>
   </head>
@@ -33,13 +42,13 @@
 
         <ul class="nav-menu">
           <li class="nav-item nav-item_meat">
-            <a href="#" class="nav-link">Meat</a>
+            <a href="#meat-section" class="nav-link">Meat</a>
           </li>
           <li class="nav-item nav-item_fish">
-            <a href="#" class="nav-link">Fish</a>
+            <a href="#fish-section" class="nav-link">Fish</a>
           </li>
           <li class="nav-item nav-item_veggie">
-            <a href="#" class="nav-link">Veggie</a>
+            <a href="#veggie-section" class="nav-link">Veggie</a>
           </li>
         </ul>
 
@@ -62,48 +71,21 @@
     </header>
 
     <div class="slideshow-container" id="home">
-      <div class="mySlides">
-        <img src="../images/spoons.jpg" style="width: 100%" />
-
-        <h1 class="text">Become a better cook, the easy way!</h1>
+      <div class="slides-container">
+        <img src="../images/spoons-edited.jpg" style="width: 100%" />
       </div>
 
-      <div class="mySlides">
-        <img
-          src="../images/pexels-toni-cuenca-594060.jpg"
-          style="width: 100%"
-        />
-        <h1 class="text textsecond">From simple ingredients</h1>
+      <div class="slides-container">
+        <img src="../images/cuenca-edited.jpg" style="width: 100%" />
       </div>
 
-      <div class="mySlides">
-        <img
-          src="../images/pexels-terje-sollie-299351.jpg"
-          style="width: 100%"
-        />
-        <h1 class="text textthird">To professional dishes</h1>
+      <div class="slides-container">
+        <img src="../images/sollie-edited.jpg" style="width: 100%" />
       </div>
     </div>
 
     <div class="cards"></div>
     <div class="boxes"></div>
-
-    <div class="cards">
-      <!-- <div class="card">
-        <div class="card-header">
-          <div class="card-img"></div>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Beef Wellington</h2>
-          <ul class="card-list">
-            <li>frying pan</li>
-            <li>processor</li>
-            <li>oven</li>
-          </ul>
-          <p class="card-time">&#x1F551 1h.30min</p>
-        </div>
-      </div> -->
-    </div>
 
     <div class="newsletter-container" id="form">
       <div class="form-container">
@@ -161,31 +143,58 @@
     </div>
 
     <div class="footer_container">
-      <div class="footer-content">
-        <div class="wrapper">
-          <a href="" class="icon facebook">
-            <div class="tooltip">Patricia</div>
-            <span><i class="fab fa-facebook-f"></i></span>
-          </a>
-          <a href="#" class="icon twitter">
-            <div class="tooltip">Juan</div>
-            <span><i class="fab fa-twitter"></i></span>
-          </a>
-          <a href="#" class="icon instagram">
-            <div class="tooltip">João</div>
-            <span><i class="fab fa-instagram"></i></span>
-          </a>
-        </div>
-        <div class="footer-section links"></div>
-        <div class="footer-section left icons"></div>
-        <div class="footer-section right icons"></div>
+      <div class="wrapper">
+        <a
+          href="https://www.linkedin.com/in/patricia-saraiva-dm/"
+          class="icon facebook"
+          target="_blank"
+        >
+          <div class="tooltip">Patricia</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a
+          href="https://www.facebook.com/juan.p.gimenez.58"
+          class="icon twitter"
+          target="_blank"
+        >
+          <div class="tooltip">Juan</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jo%C3%A3o-sassetti-5bab05184/"
+          class="icon instagram"
+          target="_blank"
+        >
+          <div class="tooltip">João</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a
+          href="https://github.com/Sa7i/Bro.Co"
+          class="icon github"
+          target="_blank"
+        >
+          <div class="tooltip">Github</div>
+          <span><i class="fab fa-github"></i></span>
+        </a>
       </div>
-      <ul class="contacts-description">
-        <li>210315799</li>
-        <li>bro.co@gmail.com</li>
-        <li>Rua Conde Redondo, 145</li>
-      </ul>
+      <div class="contacts_container">
+        <ul class="contacts-description">
+          <div class="phone-number">
+            <i class="fa-solid fa-square-phone"></i>
+            <li>210315799</li>
+          </div>
+          <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <li>bro.co@gmail.com</li>
+          </div>
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <li>Rua Conde Redondo, 145</li>
+          </div>
+        </ul>
+      </div>
     </div>
+
     <script src="../components/popUpForm.js"></script>
     <script src="../components/burgerMenu.js"></script>
     <script src="../components/cards.js"></script>
