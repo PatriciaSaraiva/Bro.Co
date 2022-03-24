@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="../nav.css" />
     <link rel="stylesheet" href="./slideShow.css" />
     <link rel="stylesheet" href="../cards.css" />
+    <link rel="stylesheet" href="../recipes.css" />
     <link rel="stylesheet" href="../newsletterForm.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
     <title>Slide test</title>
   </head>
@@ -78,6 +84,10 @@
         <h1 class="text textthird">To professional dishes</h1>
       </div>
     </div>
+
+    <div class="cards"></div>
+    <div class="boxes"></div>
+
     <div class="cards">
       <!-- <div class="card">
         <div class="card-header">
@@ -149,18 +159,37 @@
         <img class="form-img" />
       </div>
     </div>
-    <script>
-      function onSubscribe() {
-        const popup = document.getElementById("popup");
-        popup.classList.add("show");
-      }
-      function onCancelSubscribe() {
-        const popup = document.getElementById("popup");
-        popup.classList.remove("show");
-      }
-    </script>
+
+    <div class="footer_container">
+      <div class="footer-content">
+        <div class="wrapper">
+          <a href="" class="icon facebook">
+            <div class="tooltip">Patricia</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+          <a href="#" class="icon twitter">
+            <div class="tooltip">Juan</div>
+            <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="#" class="icon instagram">
+            <div class="tooltip">João</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+        </div>
+        <div class="footer-section links"></div>
+        <div class="footer-section left icons"></div>
+        <div class="footer-section right icons"></div>
+      </div>
+      <ul class="contacts-description">
+        <li>210315799</li>
+        <li>bro.co@gmail.com</li>
+        <li>Rua Conde Redondo, 145</li>
+      </ul>
+    </div>
+    <script src="../components/popUpForm.js"></script>
     <script src="../components/burgerMenu.js"></script>
     <script src="../components/cards.js"></script>
+    <script src="../components/recipes.js"></script>
     <script src="slide.js"></script>
   </body>
 </html>

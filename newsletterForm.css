@@ -147,7 +147,7 @@ textarea {
   .newsletter-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     height: 600px;
   }
   .form-container {
