@@ -2,21 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-html, body {
+
+html,
+body {
   overflow: hidden;
   height: 100%;
   overflow-x: hidden;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 .slideshow-container {
   margin: auto 0 20px 0;
   width: 100%;
-  height: 95vh; 
+  height: 95vh;
   position: relative;
   bottom: 66px;
-  
 }
 
 .mySlides {
@@ -25,61 +27,57 @@ html, body {
 
 .slideshow-container img {
   width: 100%;
-  height: 95vh; 
+  height: 95vh;
   object-fit: cover;
   font-size: 35px;
 }
 
 .text {
   color: #202020;
-  font-family: "Roboto", sans-serif;
+
   padding: 8px 12px;
   position: relative;
-  bottom: 500px;
+  bottom: 550px;
   width: 100%;
   text-align: center;
 }
 
 .textsecond {
-
   color: #f2f2f2;
   position: relative;
-  bottom : 130px;
+  bottom: 130px;
   padding: 8px 12px;
   width: 100%;
   text-align: center;
-  }
-
+}
 
 .textthird {
-  bottom: 500px;
+  /* bottom: 600px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 600px) {
+  .slideshow-container {
+    font-size: 10px;
+    height: 180px;
+    margin: 0;
+  }
+  .slideshow-container img {
+    object-fit: scale-down;
+    height: auto;
+  }
 
-@media only screen and (max-width: 600px){
-    .slideshow-container {
-      font-size: 10px;
-      height: 180px;
+  .text {
+    bottom: 170px;
+  }
+
+  .textsecond {
+    bottom: 60px;
+  }
+
+  .textthird {
+    bottom: 180px;
+  }
 }
-    .slideshow-container img {
-      object-fit: scale-down;
-      height: auto;
-
-      
-    }
-
-    .text {
-      bottom: 200px;
-    }
-   
-    .textsecond {
-      bottom: 60px;
-    }
-
-    .textthird {
-      bottom: 220px;
-    }
-  }  
-
-
-
