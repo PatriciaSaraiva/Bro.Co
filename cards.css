@@ -15,7 +15,7 @@ body {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 3px 5px 15px 1px #252525;
   }
   .card-img {
     border-radius: 50%;
@@ -44,3 +44,4 @@ body {
     padding-left: 15px;
     padding-top: 5px;
   }
+
