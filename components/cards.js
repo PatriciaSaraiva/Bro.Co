@@ -1,6 +1,7 @@
 const cards = document.querySelector(".cards");
 const utensilsCards = [
   {
+
     name: "Beef Wellington",
     picture: "../images/Filet-raw.jpg",
     utensils: ["oven", "frying pan", "food processor"],
@@ -8,13 +9,16 @@ const utensilsCards = [
 
   },
   {
-    name: "Salmon & Pesto-dressed veg",
+    
+
+    name: "Salmon & Pesto-Dressed Veg",
+
     picture: "../images/salmon.jpg",
     utensils: ["large pan", "frying pan", "food processor"],
     time: "&#x1F551 30min",
   },
   {
-    name: "Classic ratatouille",
+    name: "Classic Ratatouille",
     picture: "../images/courgette.jpg",
     utensils: ["large casserole pan", "or saucepan"],
     time: "&#x1F551 1h.15min."
@@ -47,7 +51,7 @@ function createCard(title, imageUrl, utensils, time) {
   }
   cardBody.appendChild(cardList);
   const cardTime = document.createElement("p");
-  cardTime.classList.add("cardTime");
+  cardTime.classList.add("card-time");
   cardTime.innerHTML = time;
   cardList.appendChild(cardTime);
 }
