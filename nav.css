@@ -19,16 +19,20 @@ a {
 
 .header {
   margin: auto 0 54px 0;
-  /* height: 50px; */
+
   padding: 12px 0;
-  width: 100%;
 }
 
 .navbar {
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   border-bottom: solid 1px rgb(141, 140, 140);
   padding-right: 3rem;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -57,7 +61,7 @@ a {
   color: #000;
 }
 
-.btn-container {
+.btn-newsletter {
   align-self: center;
   font-size: 1.2rem;
   color: #204715;
@@ -109,9 +113,17 @@ a {
 
 @media only screen and (max-width: 600px) {
   .navbar {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    align-items: center;
     justify-content: space-between;
+    display: flex;
+    position: fixed;
+    border-bottom: solid 1px rgb(141, 140, 140);
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 10;
+    padding: 10px 1rem;
   }
 
   .nav_mobile {
@@ -127,15 +139,25 @@ a {
   .burger {
     display: block;
     cursor: pointer;
-    
   }
 
   .btn-container {
     font-size: 0.5rem;
     border-radius: 10px;
-    width: 3.5rem;
     height: 1.5rem;
   }
+
+  .btn-newsletter {
+    align-self: center;
+    font-size: 0.8rem;
+    color: #204715;
+    border-radius: 10px;
+    background-color: #73c95a;
+    border: 1px solid #79b268;
+    width: 5rem;
+    height: 2rem;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -159,7 +181,6 @@ a {
     font-size: 1.5rem;
   }
   .btn-newsletter_container {
-    width: 4rem;
     order: 3;
   }
   .burger-menu_container {
