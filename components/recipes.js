@@ -31,6 +31,7 @@ const recipesBoxes = [
       "2 lemons"
     ],
     processTitle: "Salmon & pesto-dressed veg",
+
     process: [
               "For the pesto, peel the garlic and add half to a jug with the pine nuts. Pick in the basil leaves and blitz until finely chopped.",
               "Add 2 to 3 tablespoons of extra virgin olive oil, then finely grate and stir through the Parmesan",
@@ -46,6 +47,7 @@ const recipesBoxes = [
           },
           {
             ingredientsTitle: "Ingredients:",
+
     imagesUrl: "../images/BFV13909_BakedRatatouille-ThumbTextless1080.jpg",
     ingredients: [
       "2 red onions", "4 cloves of garlic", "2 aubergines", "3 courgettes", "3 red or yellow peppers", "6 ripe tomatoes", "½ a bunch of fresh basil , (15g)",
@@ -65,6 +67,7 @@ const recipesBoxes = [
 ];
 
 
+
 const boxes = document.querySelector(".boxes");
 
 function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, process, bgColor) {
@@ -76,6 +79,7 @@ function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, proce
   const box = document.createElement("div");
   box.classList.add("box");
   boxContainer.appendChild(box);
+
 
   const boxHeader = document.createElement("div");
   boxHeader.classList.add("box-header");

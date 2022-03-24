@@ -1,5 +1,5 @@
 * {
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
 }
 
  .cards {
@@ -32,4 +32,29 @@
     padding-left: 15px;
     padding-top: 5px;
   }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    margin-top: 8rem;
+  }
+  .card-img {
+    height: 100px;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .card-body {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+  .card-header {
+    display: flex;
+    justify-content: center;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+}
+}
 

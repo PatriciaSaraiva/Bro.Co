@@ -63,6 +63,7 @@ body {
     font-size: 10px;
     height: 180px;
     margin: 0;
+    bottom: 45px;
   }
   .slideshow-container img {
     object-fit: scale-down;
@@ -79,5 +80,27 @@ body {
 
   .textthird {
     bottom: 180px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slideshow-container {
+    height: 300px;
+  }
+
+  .slideshow-container img {
+    height: auto;
+  }
+
+  .text {
+    bottom: 320px;
+  }
+
+  .textsecond {
+    bottom: 75px;
+  }
+
+  .textthird {
+    bottom: 370px;
   }
 }
