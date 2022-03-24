@@ -16,6 +16,7 @@ const recipesBoxes = [
                "Drain the vegetables well, then tip into a large bowl. Add the pesto, then toss to coat.",
                "Divide the salmon and vegetables between plates, drizzle over the pan juices, then cut the remaining lemon into wedges for squeezing over."
              ],
+             color: "red"
 
   },
   {
@@ -34,9 +35,9 @@ const recipesBoxes = [
   }
 ];
 
-function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, process) {
+function createBox(ingredientsTitle, imagesUrl, ingredients, processTitle, process, bgColor) {
   const box = document.createElement("div");
-  box.classList.add("box");
+  box.classList.add(`box ${bgColor}`);
   boxes.appendChild(box);
   const boxHeader = document.createElement("div");
   boxHeader.classList.add("box-header");
@@ -85,6 +86,7 @@ for (let i = 0; i < recipesBoxes.length; i++) {
     recipesBoxes[i].imagesUrl,
     recipesBoxes[i].ingredients,
     recipesBoxes[i].processTitle,
-    recipesBoxes[i].process
+    recipesBoxes[i].process,
+    recipesBoxes[i].color
   );
 }
