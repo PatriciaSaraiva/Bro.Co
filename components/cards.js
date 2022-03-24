@@ -1,10 +1,17 @@
 const cards = document.querySelector(".cards");
 const utensilsCards = [
   {
+    name: "Beef Wellington",
+    picture: "../images/Filet-raw.jpg",
+    utensils: ["oven", "frying pan", "food processor"],
+    time: "&#x1F551 1h.30min",
+
+  },
+  {
     name: "Salmon & Pesto-dressed veg",
     picture: "../images/salmon.jpg",
     utensils: ["large pan", "frying pan", "food processor"],
-    time: "&#x1F551 30min"
+    time: "&#x1F551 30min",
   },
   {
     name: "Classic ratatouille",

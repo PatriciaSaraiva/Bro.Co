@@ -1,0 +1,50 @@
+.boxes {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'roboto';
+  }
+  .box {
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .box-img {
+    border-radius: 10%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./images/beef_wellington.jpg");
+    height: 300px;
+    width: 100%;
+  }
+  .box-body {
+    padding: 10px 20px;
+  }
+  .box-body h2 {
+    margin: 10px 0px;
+  }
+  
+  .box-list {
+    font-size: 16px;
+    color: gray
+  }
+  
+  .box-aside {
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  }
+
+  .process-list {
+    font-size: 16px;
+  }
+
+ 
