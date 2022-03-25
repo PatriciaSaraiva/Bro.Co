@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  margin: auto 0 54px 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  border-bottom: solid 1px rgb(141, 140, 140);
+  padding-right: 3rem;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 97px;
+  height: 75px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 10;
+}
+
+.nav-item {
+  margin-left: 5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  color: transparent;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: #000;
+}
+
+.btn-newsletter {
+  align-self: center;
+  font-size: 1.2rem;
+  color: #204715;
+  border-radius: 10px;
+  background-color: #73c95a;
+  border: 1px solid #79b268;
+  width: 8rem;
+  height: 3rem;
+}
+
+.nav-item:hover {
+  border-radius: 10px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.nav-item_meat:hover {
+  color: #c552b9;
+  border: 1px solid #c552b9;
+  background-color: #fef0f0;
+}
+.nav-item_fish:hover {
+  color: #4089cd;
+  border: 1px solid #4089cd;
+  background-color: #e9f6fa;
+}
+.nav-item_veggie:hover {
+  color: #f0a029;
+  border: 1px solid #f0a029;
+  background-color: #fcfee6;
+}
+
+.btn-newsletter_container {
+  display: flex;
+}
+
+/* Burger menu style */
+.burger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #204715;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    border-bottom: solid 1px rgb(141, 140, 140);
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 10;
+    padding: 10px 1rem;
+  }
+
+  .nav_mobile {
+    display: flex;
+  }
+
+  .logo {
+    width: 50px;
+    height: 30px;
+    order: 2;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .btn-container {
+    font-size: 0.5rem;
+    border-radius: 10px;
+    height: 1.5rem;
+  }
+
+  .btn-newsletter {
+    align-self: center;
+    font-size: 0.8rem;
+    color: #204715;
+    border-radius: 10px;
+    background-color: #73c95a;
+    border: 1px solid #79b268;
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  .btn-newsletter_container {
+    order: 3;
+  }
+  .burger-menu_container {
+    order: 1;
+    width: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-item {
+    margin-left: 0;
+  }
+  .nav-item_meat:hover {
+    color: #c552b9;
+  }
+  .nav-item_fish:hover {
+    color: #4089cd;
+  }
+  .nav-item_veggie:hover {
+    color: #f0a029;
+  }
+  .burger {
+    display: none;
+  }
+}

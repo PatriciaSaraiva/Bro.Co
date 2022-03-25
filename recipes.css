@@ -1,0 +1,128 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.boxes {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "roboto";
+}
+.box {
+  border-radius: 10%;
+  width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxContainer {
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-img {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/beef_wellington.jpg");
+  height: 500px;
+  width: 100%;
+}
+.box-body {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  height: 100%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-body h2 {
+  margin: 10px;
+}
+
+.box-list {
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5;
+  margin: 1.5rem;
+}
+
+.box-aside {
+  border-radius: 10px;
+  width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 15px 1px #252525;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.process-list {
+  font-size: 16px;
+  list-style: decimal;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: initial;
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.bg-color1 {
+  border: 1px solid #c552b9;
+  background-color: #fef0f0;
+}
+
+.bg-color2 {
+  background-color: #e9f6fa;
+  border: 1px solid #4089cd;
+}
+
+.bg-color3 {
+  background-color: #fcfee6;
+  border: 1px solid #f0a029;
+}
+
+.box-header {
+  border-radius: 10%;
+}
+.box-header1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxContainer {
+    display: block;
+    width: auto;
+  }
+
+  .box {
+    width: 300px;
+  }
+
+  .box-header1 {
+    font-size: 20px;
+  }
+  .box-img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .box-aside {
+    width: 300px;
+  }
+  .box-img {
+    height: 300px;
+    width: 300px;
+  }
+}
