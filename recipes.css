@@ -84,10 +84,12 @@
 
 .bg-color2 {
   background-color: #e9f6fa;
+  border: 1px solid #4089cd;
 }
 
 .bg-color3 {
   background-color: #fcfee6;
+  border: 1px solid #f0a029;
 }
 
 .box-header {
@@ -106,6 +108,14 @@
 
   .box {
     width: 300px;
+  }
+
+  .box-header1 {
+    font-size: 20px;
+  }
+  .box-img {
+    height: 300px;
+    width: 100%;
   }
 
   .box-aside {
